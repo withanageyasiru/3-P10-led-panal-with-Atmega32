@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "P10TestM8", "P10TestM8\P10TestM8_6_2.cproj", "{AAEAF0B6-080F-4D4E-8936-AF7D7180A331}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAEAF0B6-080F-4D4E-8936-AF7D7180A331}.Debug|AVR.ActiveCfg = Debug|AVR
+		{AAEAF0B6-080F-4D4E-8936-AF7D7180A331}.Debug|AVR.Build.0 = Debug|AVR
+		{AAEAF0B6-080F-4D4E-8936-AF7D7180A331}.Release|AVR.ActiveCfg = Release|AVR
+		{AAEAF0B6-080F-4D4E-8936-AF7D7180A331}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

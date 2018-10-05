@@ -1,0 +1,1460 @@
+
+P10TestM8.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000a78  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000018  00800060  00000a78  00000b0c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          000000c3  00800078  00800078  00000b24  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000b24  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000b54  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000e8  00000000  00000000  00000b90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000141f  00000000  00000000  00000c78  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000009cb  00000000  00000000  00002097  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000a05  00000000  00000000  00002a62  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000324  00000000  00000000  00003468  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000536  00000000  00000000  0000378c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000013d7  00000000  00000000  00003cc2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000001f8  00000000  00000000  00005099  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 02 	jmp	0x468	; 0x468 <__ctors_end>
+   4:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+   8:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+   c:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  10:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  14:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  18:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  1c:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  20:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  24:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  28:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  2c:	0c 94 91 02 	jmp	0x522	; 0x522 <__vector_11>
+  30:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  34:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  38:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  3c:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  40:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  44:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  48:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  4c:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+  50:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__bad_interrupt>
+
+00000054 <Arial12>:
+  54:	16 7a 0a 0c 20 60 00 01 03 07 05 09 07 01 03 03     .z.. `..........
+  64:	05 05 01 03 01 03 05 03 05 05 05 05 05 05 05 05     ................
+  74:	01 01 05 06 05 05 0b 07 06 07 07 06 05 07 07 01     ................
+  84:	05 07 06 07 07 07 06 07 07 06 07 07 07 0b 07 07     ................
+  94:	07 02 03 02 05 07 02 05 05 04 05 05 03 05 05 01     ................
+  a4:	02 05 01 09 05 05 05 05 03 05 03 05 05 09 05 05     ................
+  b4:	05 03 01 03 06 07 7f 10 07 00 07 00 00 00 24 e4     ..............$.
+  c4:	3c e7 3c 27 24 00 10 00 10 00 00 00 ce 11 ff 11     <.<'$...........
+  d4:	e2 00 10 30 10 00 0e 11 11 ce 38 e6 11 10 e0 00     ...0......8.....
+  e4:	00 10 00 00 00 10 10 00 e0 1e 11 29 c6 a0 00 00     ...........)....
+  f4:	10 10 10 00 00 10 07 00 f8 06 01 00 30 40 01 06     ............0@..
+ 104:	f8 40 30 00 02 0a 07 0a 02 00 00 00 00 00 10 10     .@0.............
+ 114:	7c 10 10 00 00 00 00 00 00 70 20 20 20 00 00 00     |........p   ...
+ 124:	00 10 80 7c 03 10 00 00 fe 01 01 01 fe 00 10 10     ...|............
+ 134:	10 00 04 02 ff 00 00 10 02 81 41 31 0e 10 10 10     ..........A1....
+ 144:	10 10 82 01 11 11 ee 00 10 10 10 00 60 58 46 ff     ............`XF.
+ 154:	40 00 00 00 10 00 9c 0b 09 09 f1 00 10 10 10 00     @...............
+ 164:	fe 11 09 09 f2 00 10 10 10 00 01 c1 39 05 03 00     ............9...
+ 174:	10 00 00 00 ee 11 11 11 ee 00 10 10 10 00 9e 21     ...............!
+ 184:	21 11 fe 00 10 10 10 00 04 10 04 70 10 28 28 28     !..........p.(((
+ 194:	44 00 00 00 00 00 48 48 48 48 48 48 00 00 00 00     D.....HHHHHH....
+ 1a4:	00 00 44 28 28 28 10 00 00 00 00 00 06 01 61 11     ..D(((........a.
+ 1b4:	0e 00 00 10 00 00 f0 0c e2 12 09 09 f1 19 02 86     ................
+ 1c4:	78 10 20 40 90 90 90 90 90 50 40 20 80 70 2e 21     x. @.....P@ .p.!
+ 1d4:	2e 70 80 10 00 00 00 00 00 10 ff 11 11 11 11 ee     .p..............
+ 1e4:	10 10 10 10 10 00 7c 82 01 01 01 82 44 00 00 10     ......|.....D...
+ 1f4:	10 10 00 00 ff 01 01 01 01 82 7c 10 10 10 10 10     ..........|.....
+ 204:	00 00 ff 11 11 11 11 11 10 10 10 10 10 10 ff 11     ................
+ 214:	11 11 01 10 00 00 00 00 7c 82 01 01 11 92 74 00     ........|.....t.
+ 224:	00 10 10 10 00 00 ff 10 10 10 10 10 ff 10 00 00     ................
+ 234:	00 00 00 10 ff 10 c0 00 00 00 ff 00 10 10 10 00     ................
+ 244:	ff 20 10 28 44 82 01 10 00 00 00 00 00 10 ff 00     . .(D...........
+ 254:	00 00 00 00 10 10 10 10 10 10 ff 06 78 80 78 06     ............x.x.
+ 264:	ff 10 00 00 10 00 00 10 ff 02 0c 10 60 80 ff 10     ............`...
+ 274:	00 00 00 00 00 10 7c 82 01 01 01 82 7c 00 00 10     ......|.....|...
+ 284:	10 10 00 00 ff 11 11 11 11 0e 10 00 00 00 00 00     ................
+ 294:	7c 82 01 41 41 82 7c 00 00 10 10 10 00 10 ff 11     |..AA.|.........
+ 2a4:	11 11 31 d1 0e 10 00 00 00 00 00 10 ce 11 11 11     ..1.............
+ 2b4:	11 e6 00 10 10 10 10 00 01 01 01 ff 01 01 01 00     ................
+ 2c4:	00 00 10 00 00 00 7f 80 00 00 00 80 7f 00 00 10     ................
+ 2d4:	10 10 00 00 03 1c 60 80 60 1c 03 00 00 00 10 00     ......`.`.......
+ 2e4:	00 00 07 78 80 70 0e 01 0e 70 80 7c 03 00 00 10     ...x.p...p.|....
+ 2f4:	00 00 00 00 00 10 00 00 01 c6 28 10 6c 82 01 10     ..........(.l...
+ 304:	00 00 00 00 00 10 01 06 08 f0 08 06 01 00 00 00     ................
+ 314:	10 00 00 00 00 81 61 11 0d 03 01 10 10 10 10 10     ......a.........
+ 324:	10 10 ff 01 70 40 03 7c 80 00 00 10 01 ff 40 70     ....p@.|......@p
+ 334:	10 0e 01 0e 10 00 00 00 00 00 00 00 00 00 00 00     ................
+ 344:	00 40 40 40 40 40 40 40 01 02 00 00 c8 24 24 a4     .@@@@@@@.....$$.
+ 354:	f8 00 10 10 00 10 ff 88 04 04 f8 10 00 10 10 00     ................
+ 364:	f8 04 04 88 00 10 10 00 f8 04 04 88 ff 00 10 10     ................
+ 374:	00 10 f8 24 24 24 b8 00 10 10 10 00 04 fe 05 00     ...$$$..........
+ 384:	10 00 f8 04 04 88 fc 40 50 50 40 30 ff 08 04 04     .......@PP@0....
+ 394:	f8 10 00 00 00 10 fd 10 00 fd 40 30 ff 20 30 c8     ..........@0. 0.
+ 3a4:	04 10 00 00 00 10 ff 10 fc 08 04 04 f8 08 04 04     ................
+ 3b4:	f8 10 00 00 00 10 00 00 00 10 fc 08 04 04 f8 10     ................
+ 3c4:	00 00 00 10 f8 04 04 04 f8 00 10 10 10 00 fc 88     ................
+ 3d4:	04 04 f8 70 00 10 10 00 f8 04 04 88 fc 00 10 10     ...p............
+ 3e4:	00 70 fc 08 04 10 00 00 98 24 24 24 c8 00 10 10     .p.......$$$....
+ 3f4:	10 00 04 ff 04 00 10 10 fc 00 00 80 fc 00 10 10     ................
+ 404:	00 10 0c 70 80 70 0c 00 00 10 00 00 0c 70 80 70     ...p.p.......p.p
+ 414:	0c 70 80 70 0c 00 00 10 00 00 00 10 00 00 04 d8     .p.p............
+ 424:	60 98 04 10 00 00 00 10 0c 70 80 70 0c 00 40 30     `........p.p..@0
+ 434:	00 00 04 c4 24 1c 04 10 10 10 10 10 20 de 01 00     ....$....... ...
+ 444:	30 40 ff 70 01 de 20 40 30 00 20 10 10 20 20 10     0@.p.. @0. ..  .
+ 454:	00 00 00 00 00 00 fe 02 02 02 02 02 fe 10 10 10     ................
+ 464:	10 10 10 10                                         ....
+
+00000468 <__ctors_end>:
+ 468:	11 24       	eor	r1, r1
+ 46a:	1f be       	out	0x3f, r1	; 63
+ 46c:	cf e5       	ldi	r28, 0x5F	; 95
+ 46e:	d8 e0       	ldi	r29, 0x08	; 8
+ 470:	de bf       	out	0x3e, r29	; 62
+ 472:	cd bf       	out	0x3d, r28	; 61
+
+00000474 <__do_copy_data>:
+ 474:	10 e0       	ldi	r17, 0x00	; 0
+ 476:	a0 e6       	ldi	r26, 0x60	; 96
+ 478:	b0 e0       	ldi	r27, 0x00	; 0
+ 47a:	e8 e7       	ldi	r30, 0x78	; 120
+ 47c:	fa e0       	ldi	r31, 0x0A	; 10
+ 47e:	02 c0       	rjmp	.+4      	; 0x484 <__do_copy_data+0x10>
+ 480:	05 90       	lpm	r0, Z+
+ 482:	0d 92       	st	X+, r0
+ 484:	a8 37       	cpi	r26, 0x78	; 120
+ 486:	b1 07       	cpc	r27, r17
+ 488:	d9 f7       	brne	.-10     	; 0x480 <__do_copy_data+0xc>
+
+0000048a <__do_clear_bss>:
+ 48a:	21 e0       	ldi	r18, 0x01	; 1
+ 48c:	a8 e7       	ldi	r26, 0x78	; 120
+ 48e:	b0 e0       	ldi	r27, 0x00	; 0
+ 490:	01 c0       	rjmp	.+2      	; 0x494 <.do_clear_bss_start>
+
+00000492 <.do_clear_bss_loop>:
+ 492:	1d 92       	st	X+, r1
+
+00000494 <.do_clear_bss_start>:
+ 494:	ab 33       	cpi	r26, 0x3B	; 59
+ 496:	b2 07       	cpc	r27, r18
+ 498:	e1 f7       	brne	.-8      	; 0x492 <.do_clear_bss_loop>
+ 49a:	0e 94 04 05 	call	0xa08	; 0xa08 <main>
+ 49e:	0c 94 3a 05 	jmp	0xa74	; 0xa74 <_exit>
+
+000004a2 <__bad_interrupt>:
+ 4a2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000004a6 <__GFXReadFontData>:
+
+UINT8 __GFXReadPGM(const uint8_t *ptr)
+{
+	
+	return pgm_read_byte_near(ptr);
+}
+ 4a6:	e0 91 79 00 	lds	r30, 0x0079	; 0x800079 <font>
+ 4aa:	f0 91 7a 00 	lds	r31, 0x007A	; 0x80007a <font+0x1>
+ 4ae:	e8 0f       	add	r30, r24
+ 4b0:	f9 1f       	adc	r31, r25
+ 4b2:	84 91       	lpm	r24, Z
+ 4b4:	08 95       	ret
+
+000004b6 <GFXSetFont>:
+
+void GFXSetFont(const uint8_t *new_font)
+{
+	font=new_font;
+ 4b6:	90 93 7a 00 	sts	0x007A, r25	; 0x80007a <font+0x1>
+ 4ba:	80 93 79 00 	sts	0x0079, r24	; 0x800079 <font>
+ 4be:	08 95       	ret
+
+000004c0 <HC595Init>:
+    can be achieved.
+*/
+void
+_delay_loop_1(uint8_t __count)
+{
+	__asm__ volatile (
+ 4c0:	81 b3       	in	r24, 0x11	; 17
+ 4c2:	88 63       	ori	r24, 0x38	; 56
+ 4c4:	81 bb       	out	0x11, r24	; 17
+ 4c6:	81 b3       	in	r24, 0x11	; 17
+ 4c8:	80 6c       	ori	r24, 0xC0	; 192
+ 4ca:	81 bb       	out	0x11, r24	; 17
+ 4cc:	b8 9a       	sbi	0x17, 0	; 23
+ 4ce:	82 b3       	in	r24, 0x12	; 18
+ 4d0:	8f 73       	andi	r24, 0x3F	; 63
+ 4d2:	82 bb       	out	0x12, r24	; 18
+ 4d4:	82 b3       	in	r24, 0x12	; 18
+ 4d6:	80 6c       	ori	r24, 0xC0	; 192
+ 4d8:	82 bb       	out	0x12, r24	; 18
+ 4da:	08 95       	ret
+
+000004dc <P10SelCh>:
+ 4dc:	92 b3       	in	r25, 0x12	; 18
+ 4de:	9f 73       	andi	r25, 0x3F	; 63
+ 4e0:	92 bb       	out	0x12, r25	; 18
+ 4e2:	82 30       	cpi	r24, 0x02	; 2
+ 4e4:	59 f0       	breq	.+22     	; 0x4fc <P10SelCh+0x20>
+ 4e6:	83 30       	cpi	r24, 0x03	; 3
+ 4e8:	29 f0       	breq	.+10     	; 0x4f4 <P10SelCh+0x18>
+ 4ea:	81 30       	cpi	r24, 0x01	; 1
+ 4ec:	09 f0       	breq	.+2      	; 0x4f0 <P10SelCh+0x14>
+ 4ee:	08 95       	ret
+ 4f0:	96 9a       	sbi	0x12, 6	; 18
+ 4f2:	08 95       	ret
+ 4f4:	82 b3       	in	r24, 0x12	; 18
+ 4f6:	80 6c       	ori	r24, 0xC0	; 192
+ 4f8:	82 bb       	out	0x12, r24	; 18
+ 4fa:	08 95       	ret
+ 4fc:	97 9a       	sbi	0x12, 7	; 18
+ 4fe:	08 95       	ret
+
+00000500 <HC595Write>:
+   and then latched. The byte is then available on
+   output line Q0 to Q7 of the HC595 IC.
+
+*/
+void HC595Write(uint8_t data)
+{
+ 500:	98 e0       	ldi	r25, 0x08	; 8
+ 502:	06 c0       	rjmp	.+12     	; 0x510 <HC595Write+0x10>
+         HC595DataHigh();
+      }
+      else
+      {
+         //MSB is 0 so output high
+         HC595DataLow();
+ 504:	93 98       	cbi	0x12, 3	; 18
+//Sends a clock pulse on SH_CP line
+void HC595Pulse()
+{
+   //Pulse the Shift Clock
+
+   HC595_PORT|=(1<<HC595_SH_CP_POS);//HIGH
+ 506:	94 9a       	sbi	0x12, 4	; 18
+
+   HC595_PORT&=(~(1<<HC595_SH_CP_POS));//LOW
+ 508:	94 98       	cbi	0x12, 4	; 18
+         //MSB is 0 so output high
+         HC595DataLow();
+      }
+
+      HC595Pulse();  //Pulse the Clock line
+      data=data<<1;  //Now bring next bit at MSB position
+ 50a:	88 0f       	add	r24, r24
+ 50c:	91 50       	subi	r25, 0x01	; 1
+void HC595Write(uint8_t data)
+{
+   //Send each 8 bits serially
+
+   //Order is MSB first
+   for(uint8_t i=0;i<8;i++)
+ 50e:	41 f0       	breq	.+16     	; 0x520 <HC595Write+0x20>
+   {
+      //Output the data on DS line according to the
+      //Value of MSB
+      if(data & 0b10000000)
+ 510:	87 ff       	sbrs	r24, 7
+ 512:	f8 cf       	rjmp	.-16     	; 0x504 <HC595Write+0x4>
+      {
+         //MSB is 1 so output high
+
+         HC595DataHigh();
+ 514:	93 9a       	sbi	0x12, 3	; 18
+//Sends a clock pulse on SH_CP line
+void HC595Pulse()
+{
+   //Pulse the Shift Clock
+
+   HC595_PORT|=(1<<HC595_SH_CP_POS);//HIGH
+ 516:	94 9a       	sbi	0x12, 4	; 18
+
+   HC595_PORT&=(~(1<<HC595_SH_CP_POS));//LOW
+ 518:	94 98       	cbi	0x12, 4	; 18
+         //MSB is 0 so output high
+         HC595DataLow();
+      }
+
+      HC595Pulse();  //Pulse the Clock line
+      data=data<<1;  //Now bring next bit at MSB position
+ 51a:	88 0f       	add	r24, r24
+ 51c:	91 50       	subi	r25, 0x01	; 1
+void HC595Write(uint8_t data)
+{
+   //Send each 8 bits serially
+
+   //Order is MSB first
+   for(uint8_t i=0;i<8;i++)
+ 51e:	c1 f7       	brne	.-16     	; 0x510 <HC595Write+0x10>
+   }
+
+   //Now all 8 bits have been transferred to shift register
+   //Move them to output latch at one
+   //HC595Latch();
+}
+ 520:	08 95       	ret
+
+00000522 <__vector_11>:
+
+
+}
+
+ISR(TIMER0_OVF_vect)
+{
+ 522:	1f 92       	push	r1
+ 524:	0f 92       	push	r0
+ 526:	0f b6       	in	r0, 0x3f	; 63
+ 528:	0f 92       	push	r0
+ 52a:	11 24       	eor	r1, r1
+ 52c:	0f 93       	push	r16
+ 52e:	1f 93       	push	r17
+ 530:	2f 93       	push	r18
+ 532:	3f 93       	push	r19
+ 534:	4f 93       	push	r20
+ 536:	5f 93       	push	r21
+ 538:	6f 93       	push	r22
+ 53a:	7f 93       	push	r23
+ 53c:	8f 93       	push	r24
+ 53e:	9f 93       	push	r25
+ 540:	af 93       	push	r26
+ 542:	bf 93       	push	r27
+ 544:	cf 93       	push	r28
+ 546:	df 93       	push	r29
+ 548:	ef 93       	push	r30
+ 54a:	ff 93       	push	r31
+ 54c:	00 91 78 00 	lds	r16, 0x0078	; 0x800078 <__data_end>
+ 550:	10 e0       	ldi	r17, 0x00	; 0
+ 552:	e8 01       	movw	r28, r16
+ 554:	c5 58       	subi	r28, 0x85	; 133
+ 556:	df 4f       	sbci	r29, 0xFF	; 255
+ 558:	05 5c       	subi	r16, 0xC5	; 197
+ 55a:	1e 4f       	sbci	r17, 0xFE	; 254
+   static uint8_t ch=0;
+   
+   for(uint8_t i=0;i<48;i++)
+   {
+	   HC595Write(p10_vram[i*4+ch]);	   
+ 55c:	88 81       	ld	r24, Y
+ 55e:	0e 94 80 02 	call	0x500	; 0x500 <HC595Write>
+ 562:	24 96       	adiw	r28, 0x04	; 4
+
+ISR(TIMER0_OVF_vect)
+{
+   static uint8_t ch=0;
+   
+   for(uint8_t i=0;i<48;i++)
+ 564:	c0 17       	cp	r28, r16
+ 566:	d1 07       	cpc	r29, r17
+ 568:	c9 f7       	brne	.-14     	; 0x55c <__vector_11+0x3a>
+			
+	}
+}
+void P10DispOff()
+{
+	P10_EN_PORT&=~(1<<P10_EN_POS);		
+ 56a:	c0 98       	cbi	0x18, 0	; 24
+//Sends a clock pulse on ST_CP line
+void HC595Latch()
+{
+   //Pulse the Store Clock
+
+   HC595_PORT|=(1<<HC595_ST_CP_POS);//HIGH
+ 56c:	95 9a       	sbi	0x12, 5	; 18
+ 56e:	81 e0       	ldi	r24, 0x01	; 1
+ 570:	98 2f       	mov	r25, r24
+ 572:	9a 95       	dec	r25
+ 574:	f1 f7       	brne	.-4      	; 0x572 <__vector_11+0x50>
+   _delay_loop_1(1);
+
+   HC595_PORT&=(~(1<<HC595_ST_CP_POS));//LOW
+ 576:	95 98       	cbi	0x12, 5	; 18
+ 578:	8a 95       	dec	r24
+ 57a:	f1 f7       	brne	.-4      	; 0x578 <__vector_11+0x56>
+   
+   P10DispOff();
+   
+   HC595Latch();
+   
+   P10SelCh(3-ch);
+ 57c:	90 91 78 00 	lds	r25, 0x0078	; 0x800078 <__data_end>
+ 580:	83 e0       	ldi	r24, 0x03	; 3
+ 582:	89 1b       	sub	r24, r25
+ 584:	0e 94 6e 02 	call	0x4dc	; 0x4dc <P10SelCh>
+	P10_EN_PORT&=~(1<<P10_EN_POS);		
+}
+
+void P10DispOn()
+{
+	P10_EN_PORT|=(1<<P10_EN_POS);		
+ 588:	c0 9a       	sbi	0x18, 0	; 24
+   
+   P10SelCh(3-ch);
+   
+   P10DispOn();
+   
+   ch++;
+ 58a:	80 91 78 00 	lds	r24, 0x0078	; 0x800078 <__data_end>
+ 58e:	8f 5f       	subi	r24, 0xFF	; 255
+   
+   if(ch==4)
+ 590:	84 30       	cpi	r24, 0x04	; 4
+ 592:	b9 f0       	breq	.+46     	; 0x5c2 <__vector_11+0xa0>
+   
+   P10SelCh(3-ch);
+   
+   P10DispOn();
+   
+   ch++;
+ 594:	80 93 78 00 	sts	0x0078, r24	; 0x800078 <__data_end>
+   
+   if(ch==4)
+	ch=0;
+
+}
+ 598:	ff 91       	pop	r31
+ 59a:	ef 91       	pop	r30
+ 59c:	df 91       	pop	r29
+ 59e:	cf 91       	pop	r28
+ 5a0:	bf 91       	pop	r27
+ 5a2:	af 91       	pop	r26
+ 5a4:	9f 91       	pop	r25
+ 5a6:	8f 91       	pop	r24
+ 5a8:	7f 91       	pop	r23
+ 5aa:	6f 91       	pop	r22
+ 5ac:	5f 91       	pop	r21
+ 5ae:	4f 91       	pop	r20
+ 5b0:	3f 91       	pop	r19
+ 5b2:	2f 91       	pop	r18
+ 5b4:	1f 91       	pop	r17
+ 5b6:	0f 91       	pop	r16
+ 5b8:	0f 90       	pop	r0
+ 5ba:	0f be       	out	0x3f, r0	; 63
+ 5bc:	0f 90       	pop	r0
+ 5be:	1f 90       	pop	r1
+ 5c0:	18 95       	reti
+   P10DispOn();
+   
+   ch++;
+   
+   if(ch==4)
+	ch=0;
+ 5c2:	10 92 78 00 	sts	0x0078, r1	; 0x800078 <__data_end>
+
+}
+ 5c6:	e8 cf       	rjmp	.-48     	; 0x598 <__vector_11+0x76>
+
+000005c8 <GFXPutCharXY>:
+
+int8_t GFXPutCharXY(int8_t x, int8_t y,char c,uint8_t color)
+{
+ 5c8:	2f 92       	push	r2
+ 5ca:	3f 92       	push	r3
+ 5cc:	4f 92       	push	r4
+ 5ce:	5f 92       	push	r5
+ 5d0:	6f 92       	push	r6
+ 5d2:	7f 92       	push	r7
+ 5d4:	8f 92       	push	r8
+ 5d6:	9f 92       	push	r9
+ 5d8:	af 92       	push	r10
+ 5da:	bf 92       	push	r11
+ 5dc:	cf 92       	push	r12
+ 5de:	df 92       	push	r13
+ 5e0:	ef 92       	push	r14
+ 5e2:	ff 92       	push	r15
+ 5e4:	0f 93       	push	r16
+ 5e6:	1f 93       	push	r17
+ 5e8:	cf 93       	push	r28
+ 5ea:	df 93       	push	r29
+ 5ec:	cd b7       	in	r28, 0x3d	; 61
+ 5ee:	de b7       	in	r29, 0x3e	; 62
+ 5f0:	2e 97       	sbiw	r28, 0x0e	; 14
+ 5f2:	0f b6       	in	r0, 0x3f	; 63
+ 5f4:	f8 94       	cli
+ 5f6:	de bf       	out	0x3e, r29	; 62
+ 5f8:	0f be       	out	0x3f, r0	; 63
+ 5fa:	cd bf       	out	0x3d, r28	; 61
+ 5fc:	89 83       	std	Y+1, r24	; 0x01
+ 5fe:	6d 83       	std	Y+5, r22	; 0x05
+ 600:	84 2e       	mov	r8, r20
+
+	uint8_t width = 0;
+	uint8_t height = __GFXReadFontData(FONT_OFFSET_HEIGHT);
+ 602:	83 e0       	ldi	r24, 0x03	; 3
+ 604:	90 e0       	ldi	r25, 0x00	; 0
+ 606:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+ 60a:	98 2e       	mov	r9, r24
+	uint8_t bytes = (height+7)/8;
+ 60c:	e8 2e       	mov	r14, r24
+ 60e:	f1 2c       	mov	r15, r1
+ 610:	27 e0       	ldi	r18, 0x07	; 7
+ 612:	e2 0e       	add	r14, r18
+ 614:	f1 1c       	adc	r15, r1
+ 616:	f5 94       	asr	r15
+ 618:	e7 94       	ror	r14
+ 61a:	f5 94       	asr	r15
+ 61c:	e7 94       	ror	r14
+ 61e:	f5 94       	asr	r15
+ 620:	e7 94       	ror	r14
+	
+	uint8_t firstChar = __GFXReadFontData(FONT_OFFSET_FIRSTCHAR);
+ 622:	84 e0       	ldi	r24, 0x04	; 4
+ 624:	90 e0       	ldi	r25, 0x00	; 0
+ 626:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+ 62a:	8a 83       	std	Y+2, r24	; 0x02
+	uint8_t charCount = __GFXReadFontData(FONT_OFFSET_CHARCOUNT);
+ 62c:	85 e0       	ldi	r24, 0x05	; 5
+ 62e:	90 e0       	ldi	r25, 0x00	; 0
+ 630:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+	
+	UINT16 index = 0;
+	
+	if(c < firstChar || c >= (firstChar+charCount)) {
+ 634:	3a 81       	ldd	r19, Y+2	; 0x02
+ 636:	83 16       	cp	r8, r19
+ 638:	08 f4       	brcc	.+2      	; 0x63c <GFXPutCharXY+0x74>
+ 63a:	8f c1       	rjmp	.+798    	; 0x95a <__stack+0xfb>
+ 63c:	28 2d       	mov	r18, r8
+ 63e:	30 e0       	ldi	r19, 0x00	; 0
+ 640:	c8 2e       	mov	r12, r24
+ 642:	d1 2c       	mov	r13, r1
+ 644:	a6 01       	movw	r20, r12
+ 646:	8a 81       	ldd	r24, Y+2	; 0x02
+ 648:	48 0f       	add	r20, r24
+ 64a:	51 1d       	adc	r21, r1
+ 64c:	c9 01       	movw	r24, r18
+ 64e:	84 17       	cp	r24, r20
+ 650:	95 07       	cpc	r25, r21
+ 652:	0c f0       	brlt	.+2      	; 0x656 <GFXPutCharXY+0x8e>
+ 654:	82 c1       	rjmp	.+772    	; 0x95a <__stack+0xfb>
+		return -1;//Error
+	}
+	
+	c-= firstChar;
+ 656:	9a 81       	ldd	r25, Y+2	; 0x02
+ 658:	89 1a       	sub	r8, r25
+	
+	// read width data, to get the index
+	for(uint8_t i=0; i<c; i++) {
+ 65a:	09 f4       	brne	.+2      	; 0x65e <GFXPutCharXY+0x96>
+ 65c:	80 c1       	rjmp	.+768    	; 0x95e <__stack+0xff>
+ 65e:	0f ef       	ldi	r16, 0xFF	; 255
+ 660:	08 0d       	add	r16, r8
+ 662:	10 e0       	ldi	r17, 0x00	; 0
+ 664:	09 5f       	subi	r16, 0xF9	; 249
+ 666:	1f 4f       	sbci	r17, 0xFF	; 255
+ 668:	46 e0       	ldi	r20, 0x06	; 6
+ 66a:	a4 2e       	mov	r10, r20
+ 66c:	b1 2c       	mov	r11, r1
+ 66e:	1b 82       	std	Y+3, r1	; 0x03
+ 670:	1a 82       	std	Y+2, r1	; 0x02
+		index += __GFXReadFontData(FONT_OFFSET_WTABLE+i);
+ 672:	c5 01       	movw	r24, r10
+ 674:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+ 678:	2a 81       	ldd	r18, Y+2	; 0x02
+ 67a:	3b 81       	ldd	r19, Y+3	; 0x03
+ 67c:	28 0f       	add	r18, r24
+ 67e:	31 1d       	adc	r19, r1
+ 680:	3b 83       	std	Y+3, r19	; 0x03
+ 682:	2a 83       	std	Y+2, r18	; 0x02
+ 684:	3f ef       	ldi	r19, 0xFF	; 255
+ 686:	a3 1a       	sub	r10, r19
+ 688:	b3 0a       	sbc	r11, r19
+	}
+	
+	c-= firstChar;
+	
+	// read width data, to get the index
+	for(uint8_t i=0; i<c; i++) {
+ 68a:	0a 15       	cp	r16, r10
+ 68c:	1b 05       	cpc	r17, r11
+ 68e:	89 f7       	brne	.-30     	; 0x672 <GFXPutCharXY+0xaa>
+ 690:	4a 81       	ldd	r20, Y+2	; 0x02
+ 692:	5b 81       	ldd	r21, Y+3	; 0x03
+ 694:	e4 9e       	mul	r14, r20
+ 696:	c0 01       	movw	r24, r0
+ 698:	e5 9e       	mul	r14, r21
+ 69a:	90 0d       	add	r25, r0
+ 69c:	f4 9e       	mul	r15, r20
+ 69e:	90 0d       	add	r25, r0
+ 6a0:	11 24       	eor	r1, r1
+		index += __GFXReadFontData(FONT_OFFSET_WTABLE+i);
+	}
+	index =index*bytes+charCount+FONT_OFFSET_WTABLE;
+ 6a2:	56 e0       	ldi	r21, 0x06	; 6
+ 6a4:	c5 0e       	add	r12, r21
+ 6a6:	d1 1c       	adc	r13, r1
+ 6a8:	96 01       	movw	r18, r12
+ 6aa:	28 0f       	add	r18, r24
+ 6ac:	39 1f       	adc	r19, r25
+ 6ae:	38 87       	std	Y+8, r19	; 0x08
+ 6b0:	2f 83       	std	Y+7, r18	; 0x07
+	width = __GFXReadFontData(FONT_OFFSET_WTABLE+c);
+ 6b2:	88 2d       	mov	r24, r8
+ 6b4:	90 e0       	ldi	r25, 0x00	; 0
+ 6b6:	06 96       	adiw	r24, 0x06	; 6
+ 6b8:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+ 6bc:	8b 87       	std	Y+11, r24	; 0x0b
+	
+	_y=y;
+
+
+	uint8_t shift_val;
+	shift_val=(bytes*8)-height;
+ 6be:	8e 2d       	mov	r24, r14
+ 6c0:	88 0f       	add	r24, r24
+ 6c2:	88 0f       	add	r24, r24
+ 6c4:	88 0f       	add	r24, r24
+ 6c6:	89 19       	sub	r24, r9
+ 6c8:	8c 87       	std	Y+12, r24	; 0x0c
+
+	bytes--;
+	
+	for(b=0;b<bytes;b++)
+ 6ca:	ea 94       	dec	r14
+ 6cc:	4e 2d       	mov	r20, r14
+ 6ce:	50 e0       	ldi	r21, 0x00	; 0
+ 6d0:	5a 87       	std	Y+10, r21	; 0x0a
+ 6d2:	49 87       	std	Y+9, r20	; 0x09
+ 6d4:	80 e0       	ldi	r24, 0x00	; 0
+ 6d6:	90 e0       	ldi	r25, 0x00	; 0
+ 6d8:	45 2b       	or	r20, r21
+ 6da:	09 f4       	brne	.+2      	; 0x6de <GFXPutCharXY+0x116>
+ 6dc:	94 c0       	rjmp	.+296    	; 0x806 <GFXPutCharXY+0x23e>
+ 6de:	1e 82       	std	Y+6, r1	; 0x06
+ 6e0:	3b 85       	ldd	r19, Y+11	; 0x0b
+ 6e2:	23 2f       	mov	r18, r19
+ 6e4:	30 e0       	ldi	r19, 0x00	; 0
+ 6e6:	3b 83       	std	Y+3, r19	; 0x03
+ 6e8:	2a 83       	std	Y+2, r18	; 0x02
+ 6ea:	2f e5       	ldi	r18, 0x5F	; 95
+ 6ec:	49 81       	ldd	r20, Y+1	; 0x01
+ 6ee:	24 1b       	sub	r18, r20
+ 6f0:	2c 83       	std	Y+4, r18	; 0x04
+	
+	uint8_t dd=x%8;
+	
+	dd=7-dd;
+	
+	d&=~(1<<dd);
+ 6f2:	27 e0       	ldi	r18, 0x07	; 7
+ 6f4:	22 2e       	mov	r2, r18
+ 6f6:	aa 24       	eor	r10, r10
+ 6f8:	a3 94       	inc	r10
+ 6fa:	b1 2c       	mov	r11, r1
+ 6fc:	2a 81       	ldd	r18, Y+2	; 0x02
+ 6fe:	3b 81       	ldd	r19, Y+3	; 0x03
+ 700:	3e 87       	std	Y+14, r19	; 0x0e
+ 702:	2d 87       	std	Y+13, r18	; 0x0d
+		{
+
+			if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+			break;
+
+			address=(index+b*width);
+ 704:	4d 85       	ldd	r20, Y+13	; 0x0d
+ 706:	5e 85       	ldd	r21, Y+14	; 0x0e
+ 708:	84 9f       	mul	r24, r20
+ 70a:	90 01       	movw	r18, r0
+ 70c:	85 9f       	mul	r24, r21
+ 70e:	30 0d       	add	r19, r0
+ 710:	94 9f       	mul	r25, r20
+ 712:	30 0d       	add	r19, r0
+ 714:	11 24       	eor	r1, r1
+ 716:	8f 81       	ldd	r24, Y+7	; 0x07
+ 718:	98 85       	ldd	r25, Y+8	; 0x08
+ 71a:	82 0f       	add	r24, r18
+ 71c:	93 1f       	adc	r25, r19
+ 71e:	9b 83       	std	Y+3, r25	; 0x03
+ 720:	8a 83       	std	Y+2, r24	; 0x02
+ 722:	4d 80       	ldd	r4, Y+5	; 0x05
+ 724:	e1 2c       	mov	r14, r1
+ 726:	f1 2c       	mov	r15, r1
+ 728:	55 24       	eor	r5, r5
+ 72a:	53 94       	inc	r5
+ 72c:	31 2c       	mov	r3, r1
+ 72e:	84 2c       	mov	r8, r4
+ 730:	04 2c       	mov	r0, r4
+ 732:	00 0c       	add	r0, r0
+ 734:	99 08       	sbc	r9, r9
+ 736:	74 2c       	mov	r7, r4
+ 738:	63 2c       	mov	r6, r3
+ 73a:	35 2c       	mov	r3, r5
+	{
+		uint8_t mask=0b00000001;
+		for(fy=0;fy<8;fy++)
+		{
+
+			if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+ 73c:	c4 01       	movw	r24, r8
+ 73e:	8e 0d       	add	r24, r14
+ 740:	9f 1d       	adc	r25, r15
+ 742:	40 97       	sbiw	r24, 0x10	; 16
+ 744:	0c f0       	brlt	.+2      	; 0x748 <GFXPutCharXY+0x180>
+ 746:	50 c0       	rjmp	.+160    	; 0x7e8 <GFXPutCharXY+0x220>
+			break;
+
+			address=(index+b*width);
+
+			for(_x=x,fx=0;fx<width;fx++,_x++)
+ 748:	8d 85       	ldd	r24, Y+13	; 0x0d
+ 74a:	9e 85       	ldd	r25, Y+14	; 0x0e
+ 74c:	89 2b       	or	r24, r25
+ 74e:	09 f4       	brne	.+2      	; 0x752 <GFXPutCharXY+0x18a>
+ 750:	42 c0       	rjmp	.+132    	; 0x7d6 <GFXPutCharXY+0x20e>
+			{
+				if(_x>(GFX_SCREEN_WIDTH-1))	break;
+ 752:	99 81       	ldd	r25, Y+1	; 0x01
+ 754:	90 36       	cpi	r25, 0x60	; 96
+ 756:	0c f0       	brlt	.+2      	; 0x75a <GFXPutCharXY+0x192>
+ 758:	3e c0       	rjmp	.+124    	; 0x7d6 <GFXPutCharXY+0x20e>
+ 75a:	0a 81       	ldd	r16, Y+2	; 0x02
+ 75c:	1b 81       	ldd	r17, Y+3	; 0x03
+ 75e:	59 2e       	mov	r5, r25
+ 760:	41 2c       	mov	r4, r1
+	if(x<0 || x>=GFX_SCREEN_WIDTH || y<0 || y>=GFX_SCREEN_HEIGHT) return;
+	
+	x=GFX_SCREEN_WIDTH-x-1;
+	uint8_t xx=x/8;
+	
+	uint8_t d=p10_vram[xx*16+y];
+ 762:	c7 2c       	mov	r12, r7
+ 764:	d1 2c       	mov	r13, r1
+ 766:	03 c0       	rjmp	.+6      	; 0x76e <GFXPutCharXY+0x1a6>
+
+			address=(index+b*width);
+
+			for(_x=x,fx=0;fx<width;fx++,_x++)
+			{
+				if(_x>(GFX_SCREEN_WIDTH-1))	break;
+ 768:	20 e6       	ldi	r18, 0x60	; 96
+ 76a:	52 16       	cp	r5, r18
+ 76c:	a1 f1       	breq	.+104    	; 0x7d6 <GFXPutCharXY+0x20e>
+
+				uint8_t data=__GFXReadFontData(address);
+ 76e:	c8 01       	movw	r24, r16
+ 770:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+
+				uint8_t bit= (data & mask);
+
+				if(bit)
+ 774:	83 21       	and	r24, r3
+ 776:	11 f1       	breq	.+68     	; 0x7bc <GFXPutCharXY+0x1f4>
+	P10_EN_PORT|=(1<<P10_EN_POS);		
+}
+
+void P10PutPixel(int8_t x,int8_t y)
+{
+	if(x<0 || x>=GFX_SCREEN_WIDTH || y<0 || y>=GFX_SCREEN_HEIGHT) return;
+ 778:	3f e5       	ldi	r19, 0x5F	; 95
+ 77a:	35 15       	cp	r19, r5
+ 77c:	f8 f0       	brcs	.+62     	; 0x7bc <GFXPutCharXY+0x1f4>
+ 77e:	4f e0       	ldi	r20, 0x0F	; 15
+ 780:	47 15       	cp	r20, r7
+ 782:	e0 f0       	brcs	.+56     	; 0x7bc <GFXPutCharXY+0x1f4>
+ 784:	8c 81       	ldd	r24, Y+4	; 0x04
+ 786:	84 19       	sub	r24, r4
+	
+	x=GFX_SCREEN_WIDTH-x-1;
+	uint8_t xx=x/8;
+ 788:	98 2f       	mov	r25, r24
+ 78a:	95 95       	asr	r25
+ 78c:	95 95       	asr	r25
+ 78e:	95 95       	asr	r25
+	
+	uint8_t d=p10_vram[xx*16+y];
+ 790:	f6 01       	movw	r30, r12
+ 792:	50 e1       	ldi	r21, 0x10	; 16
+ 794:	95 02       	muls	r25, r21
+ 796:	e0 0d       	add	r30, r0
+ 798:	f1 1d       	adc	r31, r1
+ 79a:	11 24       	eor	r1, r1
+	
+	uint8_t dd=x%8;
+ 79c:	87 70       	andi	r24, 0x07	; 7
+	
+	dd=7-dd;
+	
+	d&=~(1<<dd);
+ 79e:	92 2d       	mov	r25, r2
+ 7a0:	98 1b       	sub	r25, r24
+ 7a2:	95 01       	movw	r18, r10
+ 7a4:	02 c0       	rjmp	.+4      	; 0x7aa <GFXPutCharXY+0x1e2>
+ 7a6:	22 0f       	add	r18, r18
+ 7a8:	33 1f       	adc	r19, r19
+ 7aa:	9a 95       	dec	r25
+ 7ac:	e2 f7       	brpl	.-8      	; 0x7a6 <GFXPutCharXY+0x1de>
+ 7ae:	c9 01       	movw	r24, r18
+ 7b0:	80 95       	com	r24
+	if(x<0 || x>=GFX_SCREEN_WIDTH || y<0 || y>=GFX_SCREEN_HEIGHT) return;
+	
+	x=GFX_SCREEN_WIDTH-x-1;
+	uint8_t xx=x/8;
+	
+	uint8_t d=p10_vram[xx*16+y];
+ 7b2:	e5 58       	subi	r30, 0x85	; 133
+ 7b4:	ff 4f       	sbci	r31, 0xFF	; 255
+	
+	uint8_t dd=x%8;
+	
+	dd=7-dd;
+	
+	d&=~(1<<dd);
+ 7b6:	90 81       	ld	r25, Z
+ 7b8:	89 23       	and	r24, r25
+	
+	p10_vram[xx*16+y]=d;
+ 7ba:	80 83       	st	Z, r24
+				if(bit)
+				P10PutPixel(_x,_y+fy);
+				//else
+				//GFXRawPutPixel(_x,_y+fy,color_invert);
+
+				address++;
+ 7bc:	0f 5f       	subi	r16, 0xFF	; 255
+ 7be:	1f 4f       	sbci	r17, 0xFF	; 255
+ 7c0:	43 94       	inc	r4
+ 7c2:	53 94       	inc	r5
+			if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+			break;
+
+			address=(index+b*width);
+
+			for(_x=x,fx=0;fx<width;fx++,_x++)
+ 7c4:	84 2d       	mov	r24, r4
+ 7c6:	04 2c       	mov	r0, r4
+ 7c8:	00 0c       	add	r0, r0
+ 7ca:	99 0b       	sbc	r25, r25
+ 7cc:	4d 85       	ldd	r20, Y+13	; 0x0d
+ 7ce:	5e 85       	ldd	r21, Y+14	; 0x0e
+ 7d0:	84 17       	cp	r24, r20
+ 7d2:	95 07       	cpc	r25, r21
+ 7d4:	4c f2       	brlt	.-110    	; 0x768 <GFXPutCharXY+0x1a0>
+				//GFXRawPutPixel(_x,_y+fy,color_invert);
+
+				address++;
+
+			}
+			mask=mask<<1;
+ 7d6:	33 0c       	add	r3, r3
+ 7d8:	63 94       	inc	r6
+ 7da:	5f ef       	ldi	r21, 0xFF	; 255
+ 7dc:	e5 1a       	sub	r14, r21
+ 7de:	f5 0a       	sbc	r15, r21
+ 7e0:	73 94       	inc	r7
+	bytes--;
+	
+	for(b=0;b<bytes;b++)
+	{
+		uint8_t mask=0b00000001;
+		for(fy=0;fy<8;fy++)
+ 7e2:	88 e0       	ldi	r24, 0x08	; 8
+ 7e4:	68 12       	cpse	r6, r24
+ 7e6:	aa cf       	rjmp	.-172    	; 0x73c <GFXPutCharXY+0x174>
+ 7e8:	9d 81       	ldd	r25, Y+5	; 0x05
+ 7ea:	98 5f       	subi	r25, 0xF8	; 248
+ 7ec:	9d 83       	std	Y+5, r25	; 0x05
+ 7ee:	2e 81       	ldd	r18, Y+6	; 0x06
+ 7f0:	2f 5f       	subi	r18, 0xFF	; 255
+ 7f2:	2e 83       	std	Y+6, r18	; 0x06
+	uint8_t shift_val;
+	shift_val=(bytes*8)-height;
+
+	bytes--;
+	
+	for(b=0;b<bytes;b++)
+ 7f4:	82 2f       	mov	r24, r18
+ 7f6:	22 0f       	add	r18, r18
+ 7f8:	99 0b       	sbc	r25, r25
+ 7fa:	49 85       	ldd	r20, Y+9	; 0x09
+ 7fc:	5a 85       	ldd	r21, Y+10	; 0x0a
+ 7fe:	84 17       	cp	r24, r20
+ 800:	95 07       	cpc	r25, r21
+ 802:	0c f4       	brge	.+2      	; 0x806 <GFXPutCharXY+0x23e>
+ 804:	7f cf       	rjmp	.-258    	; 0x704 <GFXPutCharXY+0x13c>
+		_y+=8;
+	}
+
+	//Last Byte May require shifting so draw it separately
+
+	uint8_t mask=0b00000001<<shift_val;
+ 806:	21 e0       	ldi	r18, 0x01	; 1
+ 808:	52 2e       	mov	r5, r18
+ 80a:	0c 84       	ldd	r0, Y+12	; 0x0c
+ 80c:	01 c0       	rjmp	.+2      	; 0x810 <GFXPutCharXY+0x248>
+ 80e:	55 0c       	add	r5, r5
+ 810:	0a 94       	dec	r0
+ 812:	ea f7       	brpl	.-6      	; 0x80e <GFXPutCharXY+0x246>
+	for(fy=0;fy<(8-shift_val);fy++)
+ 814:	28 e0       	ldi	r18, 0x08	; 8
+ 816:	30 e0       	ldi	r19, 0x00	; 0
+ 818:	79 01       	movw	r14, r18
+ 81a:	4c 85       	ldd	r20, Y+12	; 0x0c
+ 81c:	e4 1a       	sub	r14, r20
+ 81e:	f1 08       	sbc	r15, r1
+ 820:	1e 14       	cp	r1, r14
+ 822:	1f 04       	cpc	r1, r15
+ 824:	0c f0       	brlt	.+2      	; 0x828 <GFXPutCharXY+0x260>
+ 826:	7f c0       	rjmp	.+254    	; 0x926 <__stack+0xc7>
+	{
+		if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+ 828:	5d 81       	ldd	r21, Y+5	; 0x05
+ 82a:	c5 2e       	mov	r12, r21
+ 82c:	55 0f       	add	r21, r21
+ 82e:	dd 08       	sbc	r13, r13
+ 830:	20 e1       	ldi	r18, 0x10	; 16
+ 832:	c2 16       	cp	r12, r18
+ 834:	d1 04       	cpc	r13, r1
+ 836:	0c f0       	brlt	.+2      	; 0x83a <GFXPutCharXY+0x272>
+ 838:	76 c0       	rjmp	.+236    	; 0x926 <__stack+0xc7>
+ 83a:	5b 85       	ldd	r21, Y+11	; 0x0b
+ 83c:	45 2f       	mov	r20, r21
+ 83e:	50 e0       	ldi	r21, 0x00	; 0
+ 840:	5a 87       	std	Y+10, r21	; 0x0a
+ 842:	49 87       	std	Y+9, r20	; 0x09
+ 844:	48 9f       	mul	r20, r24
+ 846:	90 01       	movw	r18, r0
+ 848:	49 9f       	mul	r20, r25
+ 84a:	30 0d       	add	r19, r0
+ 84c:	58 9f       	mul	r21, r24
+ 84e:	30 0d       	add	r19, r0
+ 850:	11 24       	eor	r1, r1
+ 852:	8f 81       	ldd	r24, Y+7	; 0x07
+ 854:	98 85       	ldd	r25, Y+8	; 0x08
+ 856:	82 0f       	add	r24, r18
+ 858:	93 1f       	adc	r25, r19
+ 85a:	98 87       	std	Y+8, r25	; 0x08
+ 85c:	8f 83       	std	Y+7, r24	; 0x07
+ 85e:	4d 80       	ldd	r4, Y+5	; 0x05
+ 860:	31 2c       	mov	r3, r1
+ 862:	8f e5       	ldi	r24, 0x5F	; 95
+ 864:	99 81       	ldd	r25, Y+1	; 0x01
+ 866:	89 1b       	sub	r24, r25
+ 868:	8a 83       	std	Y+2, r24	; 0x02
+	
+	uint8_t dd=x%8;
+	
+	dd=7-dd;
+	
+	d&=~(1<<dd);
+ 86a:	87 e0       	ldi	r24, 0x07	; 7
+ 86c:	28 2e       	mov	r2, r24
+ 86e:	aa 24       	eor	r10, r10
+ 870:	a3 94       	inc	r10
+ 872:	b1 2c       	mov	r11, r1
+ 874:	73 2c       	mov	r7, r3
+ 876:	64 2c       	mov	r6, r4
+ 878:	35 2c       	mov	r3, r5
+		if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+		break;
+		
+		address=(index+b*width);
+
+		for(_x=x,fx=0;fx<width;fx++,_x++)
+ 87a:	29 85       	ldd	r18, Y+9	; 0x09
+ 87c:	3a 85       	ldd	r19, Y+10	; 0x0a
+ 87e:	23 2b       	or	r18, r19
+ 880:	09 f4       	brne	.+2      	; 0x884 <__stack+0x25>
+ 882:	42 c0       	rjmp	.+132    	; 0x908 <__stack+0xa9>
+		{
+			if(_x>(GFX_SCREEN_WIDTH-1))	break;
+ 884:	39 81       	ldd	r19, Y+1	; 0x01
+ 886:	30 36       	cpi	r19, 0x60	; 96
+ 888:	0c f0       	brlt	.+2      	; 0x88c <__stack+0x2d>
+ 88a:	3e c0       	rjmp	.+124    	; 0x908 <__stack+0xa9>
+ 88c:	0f 81       	ldd	r16, Y+7	; 0x07
+ 88e:	18 85       	ldd	r17, Y+8	; 0x08
+ 890:	53 2e       	mov	r5, r19
+ 892:	41 2c       	mov	r4, r1
+	if(x<0 || x>=GFX_SCREEN_WIDTH || y<0 || y>=GFX_SCREEN_HEIGHT) return;
+	
+	x=GFX_SCREEN_WIDTH-x-1;
+	uint8_t xx=x/8;
+	
+	uint8_t d=p10_vram[xx*16+y];
+ 894:	86 2c       	mov	r8, r6
+ 896:	91 2c       	mov	r9, r1
+ 898:	03 c0       	rjmp	.+6      	; 0x8a0 <__stack+0x41>
+		
+		address=(index+b*width);
+
+		for(_x=x,fx=0;fx<width;fx++,_x++)
+		{
+			if(_x>(GFX_SCREEN_WIDTH-1))	break;
+ 89a:	40 e6       	ldi	r20, 0x60	; 96
+ 89c:	54 16       	cp	r5, r20
+ 89e:	a1 f1       	breq	.+104    	; 0x908 <__stack+0xa9>
+
+			uint8_t data=__GFXReadFontData(address);
+ 8a0:	c8 01       	movw	r24, r16
+ 8a2:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+
+			uint8_t bit= (data & mask);
+
+			if(bit)
+ 8a6:	83 21       	and	r24, r3
+ 8a8:	11 f1       	breq	.+68     	; 0x8ee <__stack+0x8f>
+	P10_EN_PORT|=(1<<P10_EN_POS);		
+}
+
+void P10PutPixel(int8_t x,int8_t y)
+{
+	if(x<0 || x>=GFX_SCREEN_WIDTH || y<0 || y>=GFX_SCREEN_HEIGHT) return;
+ 8aa:	5f e5       	ldi	r21, 0x5F	; 95
+ 8ac:	55 15       	cp	r21, r5
+ 8ae:	f8 f0       	brcs	.+62     	; 0x8ee <__stack+0x8f>
+ 8b0:	8f e0       	ldi	r24, 0x0F	; 15
+ 8b2:	86 15       	cp	r24, r6
+ 8b4:	e0 f0       	brcs	.+56     	; 0x8ee <__stack+0x8f>
+ 8b6:	8a 81       	ldd	r24, Y+2	; 0x02
+ 8b8:	84 19       	sub	r24, r4
+	
+	x=GFX_SCREEN_WIDTH-x-1;
+	uint8_t xx=x/8;
+ 8ba:	98 2f       	mov	r25, r24
+ 8bc:	95 95       	asr	r25
+ 8be:	95 95       	asr	r25
+ 8c0:	95 95       	asr	r25
+	
+	uint8_t d=p10_vram[xx*16+y];
+ 8c2:	f4 01       	movw	r30, r8
+ 8c4:	20 e1       	ldi	r18, 0x10	; 16
+ 8c6:	92 02       	muls	r25, r18
+ 8c8:	e0 0d       	add	r30, r0
+ 8ca:	f1 1d       	adc	r31, r1
+ 8cc:	11 24       	eor	r1, r1
+	
+	uint8_t dd=x%8;
+ 8ce:	87 70       	andi	r24, 0x07	; 7
+	
+	dd=7-dd;
+	
+	d&=~(1<<dd);
+ 8d0:	32 2d       	mov	r19, r2
+ 8d2:	38 1b       	sub	r19, r24
+ 8d4:	a5 01       	movw	r20, r10
+ 8d6:	02 c0       	rjmp	.+4      	; 0x8dc <__stack+0x7d>
+ 8d8:	44 0f       	add	r20, r20
+ 8da:	55 1f       	adc	r21, r21
+ 8dc:	3a 95       	dec	r19
+ 8de:	e2 f7       	brpl	.-8      	; 0x8d8 <__stack+0x79>
+ 8e0:	94 2f       	mov	r25, r20
+ 8e2:	90 95       	com	r25
+	if(x<0 || x>=GFX_SCREEN_WIDTH || y<0 || y>=GFX_SCREEN_HEIGHT) return;
+	
+	x=GFX_SCREEN_WIDTH-x-1;
+	uint8_t xx=x/8;
+	
+	uint8_t d=p10_vram[xx*16+y];
+ 8e4:	e5 58       	subi	r30, 0x85	; 133
+ 8e6:	ff 4f       	sbci	r31, 0xFF	; 255
+	
+	uint8_t dd=x%8;
+	
+	dd=7-dd;
+	
+	d&=~(1<<dd);
+ 8e8:	80 81       	ld	r24, Z
+ 8ea:	89 23       	and	r24, r25
+	
+	p10_vram[xx*16+y]=d;
+ 8ec:	80 83       	st	Z, r24
+			if(bit)
+			P10PutPixel(_x,_y+fy);
+			//else
+			//GFXRawPutPixel(_x,_y+fy,color_invert);
+
+			address++;
+ 8ee:	0f 5f       	subi	r16, 0xFF	; 255
+ 8f0:	1f 4f       	sbci	r17, 0xFF	; 255
+ 8f2:	43 94       	inc	r4
+ 8f4:	53 94       	inc	r5
+		if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+		break;
+		
+		address=(index+b*width);
+
+		for(_x=x,fx=0;fx<width;fx++,_x++)
+ 8f6:	84 2d       	mov	r24, r4
+ 8f8:	04 2c       	mov	r0, r4
+ 8fa:	00 0c       	add	r0, r0
+ 8fc:	99 0b       	sbc	r25, r25
+ 8fe:	29 85       	ldd	r18, Y+9	; 0x09
+ 900:	3a 85       	ldd	r19, Y+10	; 0x0a
+ 902:	82 17       	cp	r24, r18
+ 904:	93 07       	cpc	r25, r19
+ 906:	4c f2       	brlt	.-110    	; 0x89a <__stack+0x3b>
+			//GFXRawPutPixel(_x,_y+fy,color_invert);
+
+			address++;
+
+		}
+		mask=mask<<1;
+ 908:	33 0c       	add	r3, r3
+ 90a:	73 94       	inc	r7
+	}
+
+	//Last Byte May require shifting so draw it separately
+
+	uint8_t mask=0b00000001<<shift_val;
+	for(fy=0;fy<(8-shift_val);fy++)
+ 90c:	87 2d       	mov	r24, r7
+ 90e:	07 2c       	mov	r0, r7
+ 910:	00 0c       	add	r0, r0
+ 912:	99 0b       	sbc	r25, r25
+ 914:	8e 15       	cp	r24, r14
+ 916:	9f 05       	cpc	r25, r15
+ 918:	34 f4       	brge	.+12     	; 0x926 <__stack+0xc7>
+ 91a:	63 94       	inc	r6
+	{
+		if((_y+fy)>(GFX_SCREEN_HEIGHT-1))
+ 91c:	8c 0d       	add	r24, r12
+ 91e:	9d 1d       	adc	r25, r13
+ 920:	40 97       	sbiw	r24, 0x10	; 16
+ 922:	0c f4       	brge	.+2      	; 0x926 <__stack+0xc7>
+ 924:	aa cf       	rjmp	.-172    	; 0x87a <__stack+0x1b>
+
+		}
+		mask=mask<<1;
+		
+	}
+	return 1;
+ 926:	81 e0       	ldi	r24, 0x01	; 1
+}
+ 928:	2e 96       	adiw	r28, 0x0e	; 14
+ 92a:	0f b6       	in	r0, 0x3f	; 63
+ 92c:	f8 94       	cli
+ 92e:	de bf       	out	0x3e, r29	; 62
+ 930:	0f be       	out	0x3f, r0	; 63
+ 932:	cd bf       	out	0x3d, r28	; 61
+ 934:	df 91       	pop	r29
+ 936:	cf 91       	pop	r28
+ 938:	1f 91       	pop	r17
+ 93a:	0f 91       	pop	r16
+ 93c:	ff 90       	pop	r15
+ 93e:	ef 90       	pop	r14
+ 940:	df 90       	pop	r13
+ 942:	cf 90       	pop	r12
+ 944:	bf 90       	pop	r11
+ 946:	af 90       	pop	r10
+ 948:	9f 90       	pop	r9
+ 94a:	8f 90       	pop	r8
+ 94c:	7f 90       	pop	r7
+ 94e:	6f 90       	pop	r6
+ 950:	5f 90       	pop	r5
+ 952:	4f 90       	pop	r4
+ 954:	3f 90       	pop	r3
+ 956:	2f 90       	pop	r2
+ 958:	08 95       	ret
+	uint8_t charCount = __GFXReadFontData(FONT_OFFSET_CHARCOUNT);
+	
+	UINT16 index = 0;
+	
+	if(c < firstChar || c >= (firstChar+charCount)) {
+		return -1;//Error
+ 95a:	8f ef       	ldi	r24, 0xFF	; 255
+ 95c:	e5 cf       	rjmp	.-54     	; 0x928 <__stack+0xc9>
+	}
+	
+	c-= firstChar;
+	
+	// read width data, to get the index
+	for(uint8_t i=0; i<c; i++) {
+ 95e:	80 e0       	ldi	r24, 0x00	; 0
+ 960:	90 e0       	ldi	r25, 0x00	; 0
+ 962:	9f ce       	rjmp	.-706    	; 0x6a2 <GFXPutCharXY+0xda>
+
+00000964 <GFXGetCharWidth>:
+	}
+	return 1;
+}
+
+INT8 GFXGetCharWidth(char c)
+{
+ 964:	cf 93       	push	r28
+ 966:	df 93       	push	r29
+ 968:	c8 2f       	mov	r28, r24
+
+	UINT8 firstChar = __GFXReadFontData(FONT_OFFSET_FIRSTCHAR);
+ 96a:	84 e0       	ldi	r24, 0x04	; 4
+ 96c:	90 e0       	ldi	r25, 0x00	; 0
+ 96e:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+ 972:	d8 2f       	mov	r29, r24
+	UINT8 charCount = __GFXReadFontData(FONT_OFFSET_CHARCOUNT);
+ 974:	85 e0       	ldi	r24, 0x05	; 5
+ 976:	90 e0       	ldi	r25, 0x00	; 0
+ 978:	0e 94 53 02 	call	0x4a6	; 0x4a6 <__GFXReadFontData>
+	
+	
+	if(c < firstChar || c >= (firstChar+charCount)) {
+ 97c:	cd 17       	cp	r28, r29
+ 97e:	80 f0       	brcs	.+32     	; 0x9a0 <GFXGetCharWidth+0x3c>
+ 980:	2c 2f       	mov	r18, r28
+ 982:	30 e0       	ldi	r19, 0x00	; 0
+ 984:	90 e0       	ldi	r25, 0x00	; 0
+ 986:	8d 0f       	add	r24, r29
+ 988:	91 1d       	adc	r25, r1
+ 98a:	28 17       	cp	r18, r24
+ 98c:	39 07       	cpc	r19, r25
+ 98e:	44 f4       	brge	.+16     	; 0x9a0 <GFXGetCharWidth+0x3c>
+		return -1;//Error
+	}
+	
+	c-= firstChar;
+	
+	return __GFXReadFontData(FONT_OFFSET_WTABLE+c);
+ 990:	cd 1b       	sub	r28, r29
+ 992:	8c 2f       	mov	r24, r28
+ 994:	90 e0       	ldi	r25, 0x00	; 0
+ 996:	06 96       	adiw	r24, 0x06	; 6
+}
+ 998:	df 91       	pop	r29
+ 99a:	cf 91       	pop	r28
+		return -1;//Error
+	}
+	
+	c-= firstChar;
+	
+	return __GFXReadFontData(FONT_OFFSET_WTABLE+c);
+ 99c:	0c 94 53 02 	jmp	0x4a6	; 0x4a6 <__GFXReadFontData>
+}
+ 9a0:	8f ef       	ldi	r24, 0xFF	; 255
+ 9a2:	df 91       	pop	r29
+ 9a4:	cf 91       	pop	r28
+ 9a6:	08 95       	ret
+
+000009a8 <GFXWriteStringXY>:
+	}
+	return 1;
+}
+
+INT8 GFXWriteStringXY(INT8 x,INT8 y,const char *string,UINT8 color)
+{
+ 9a8:	ff 92       	push	r15
+ 9aa:	0f 93       	push	r16
+ 9ac:	1f 93       	push	r17
+ 9ae:	cf 93       	push	r28
+ 9b0:	df 93       	push	r29
+ 9b2:	c8 2f       	mov	r28, r24
+ 9b4:	d6 2f       	mov	r29, r22
+ 9b6:	fa 01       	movw	r30, r20
+ 9b8:	f2 2e       	mov	r15, r18
+	INT8 w;
+	while(*string!='\0')
+ 9ba:	40 81       	ld	r20, Z
+ 9bc:	44 23       	and	r20, r20
+ 9be:	e9 f0       	breq	.+58     	; 0x9fa <GFXWriteStringXY+0x52>
+ 9c0:	8f 01       	movw	r16, r30
+ 9c2:	0d c0       	rjmp	.+26     	; 0x9de <GFXWriteStringXY+0x36>
+	{
+		if(GFXPutCharXY(x,y,*string,color)==-1)
+		return -1;
+		
+		w=GFXGetCharWidth(*string);
+ 9c4:	f8 01       	movw	r30, r16
+ 9c6:	81 91       	ld	r24, Z+
+ 9c8:	8f 01       	movw	r16, r30
+ 9ca:	0e 94 b2 04 	call	0x964	; 0x964 <GFXGetCharWidth>
+		if(w==-1)
+ 9ce:	8f 3f       	cpi	r24, 0xFF	; 255
+ 9d0:	69 f0       	breq	.+26     	; 0x9ec <GFXWriteStringXY+0x44>
+		return -1;
+
+		x+=w;
+		x+=GFX_CHAR_SPACING; //Blank Line after each char
+ 9d2:	cd 5f       	subi	r28, 0xFD	; 253
+ 9d4:	c8 0f       	add	r28, r24
+}
+
+INT8 GFXWriteStringXY(INT8 x,INT8 y,const char *string,UINT8 color)
+{
+	INT8 w;
+	while(*string!='\0')
+ 9d6:	f8 01       	movw	r30, r16
+ 9d8:	40 81       	ld	r20, Z
+ 9da:	44 23       	and	r20, r20
+ 9dc:	71 f0       	breq	.+28     	; 0x9fa <GFXWriteStringXY+0x52>
+	{
+		if(GFXPutCharXY(x,y,*string,color)==-1)
+ 9de:	2f 2d       	mov	r18, r15
+ 9e0:	6d 2f       	mov	r22, r29
+ 9e2:	8c 2f       	mov	r24, r28
+ 9e4:	0e 94 e4 02 	call	0x5c8	; 0x5c8 <GFXPutCharXY>
+ 9e8:	8f 3f       	cpi	r24, 0xFF	; 255
+ 9ea:	61 f7       	brne	.-40     	; 0x9c4 <GFXWriteStringXY+0x1c>
+		return -1;
+ 9ec:	8f ef       	ldi	r24, 0xFF	; 255
+		x+=w;
+		x+=GFX_CHAR_SPACING; //Blank Line after each char
+		string++;
+	}
+	return 1;
+}
+ 9ee:	df 91       	pop	r29
+ 9f0:	cf 91       	pop	r28
+ 9f2:	1f 91       	pop	r17
+ 9f4:	0f 91       	pop	r16
+ 9f6:	ff 90       	pop	r15
+ 9f8:	08 95       	ret
+
+		x+=w;
+		x+=GFX_CHAR_SPACING; //Blank Line after each char
+		string++;
+	}
+	return 1;
+ 9fa:	81 e0       	ldi	r24, 0x01	; 1
+}
+ 9fc:	df 91       	pop	r29
+ 9fe:	cf 91       	pop	r28
+ a00:	1f 91       	pop	r17
+ a02:	0f 91       	pop	r16
+ a04:	ff 90       	pop	r15
+ a06:	08 95       	ret
+
+00000a08 <main>:
+}
+
+void main()
+{
+
+   HC595Init();
+ a08:	0e 94 60 02 	call	0x4c0	; 0x4c0 <HC595Init>
+   
+   GFXSetFont(Arial12);
+ a0c:	84 e5       	ldi	r24, 0x54	; 84
+ a0e:	90 e0       	ldi	r25, 0x00	; 0
+ a10:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <GFXSetFont>
+ a14:	eb e7       	ldi	r30, 0x7B	; 123
+ a16:	f0 e0       	ldi	r31, 0x00	; 0
+}
+
+void P10Clear()
+{
+	for(uint8_t i=0;i<192;i++)
+		p10_vram[i]=0xff;	
+ a18:	8f ef       	ldi	r24, 0xFF	; 255
+ a1a:	81 93       	st	Z+, r24
+	
+}
+
+void P10Clear()
+{
+	for(uint8_t i=0;i<192;i++)
+ a1c:	21 e0       	ldi	r18, 0x01	; 1
+ a1e:	eb 33       	cpi	r30, 0x3B	; 59
+ a20:	f2 07       	cpc	r31, r18
+ a22:	d9 f7       	brne	.-10     	; 0xa1a <main+0x12>
+   P10Clear();
+   
+   //Setup timer 0 to automatically refresh the display
+   
+   // Prescaler = FCPU/64
+   TCCR0|=((1<<CS01)|(1<<CS00));
+ a24:	83 b7       	in	r24, 0x33	; 51
+ a26:	83 60       	ori	r24, 0x03	; 3
+ a28:	83 bf       	out	0x33, r24	; 51
+
+   //Enable Overflow Interrupt Enable
+   TIMSK|=(1<<TOIE0);
+ a2a:	89 b7       	in	r24, 0x39	; 57
+ a2c:	81 60       	ori	r24, 0x01	; 1
+ a2e:	89 bf       	out	0x39, r24	; 57
+
+   //Initialize Counter
+   TCNT0=0;
+ a30:	12 be       	out	0x32, r1	; 50
+
+   //Enable Global Interrupt
+   sei();
+ a32:	78 94       	sei
+}
+
+void P10Clear()
+{
+	for(uint8_t i=0;i<192;i++)
+		p10_vram[i]=0xff;	
+ a34:	cf ef       	ldi	r28, 0xFF	; 255
+void main()
+{
+
+   HC595Init();
+   
+   GFXSetFont(Arial12);
+ a36:	eb e7       	ldi	r30, 0x7B	; 123
+ a38:	f0 e0       	ldi	r31, 0x00	; 0
+}
+
+void P10Clear()
+{
+	for(uint8_t i=0;i<192;i++)
+		p10_vram[i]=0xff;	
+ a3a:	c1 93       	st	Z+, r28
+	
+}
+
+void P10Clear()
+{
+	for(uint8_t i=0;i<192;i++)
+ a3c:	81 e0       	ldi	r24, 0x01	; 1
+ a3e:	eb 33       	cpi	r30, 0x3B	; 59
+ a40:	f8 07       	cpc	r31, r24
+ a42:	d9 f7       	brne	.-10     	; 0xa3a <main+0x32>
+   while(1)
+   {
+	   P10Clear();
+	   
+	  // ScrollMsg("  Ishanka");  //Change this to your custom message
+	 GFXWriteStringXY(0,0,"L canteen akka",0);
+ a44:	20 e0       	ldi	r18, 0x00	; 0
+ a46:	40 e6       	ldi	r20, 0x60	; 96
+ a48:	50 e0       	ldi	r21, 0x00	; 0
+ a4a:	60 e0       	ldi	r22, 0x00	; 0
+ a4c:	80 e0       	ldi	r24, 0x00	; 0
+ a4e:	0e 94 d4 04 	call	0x9a8	; 0x9a8 <GFXWriteStringXY>
+	 GFXWriteStringXY(0,16,"ishanka",0);
+ a52:	20 e0       	ldi	r18, 0x00	; 0
+ a54:	4f e6       	ldi	r20, 0x6F	; 111
+ a56:	50 e0       	ldi	r21, 0x00	; 0
+ a58:	60 e1       	ldi	r22, 0x10	; 16
+ a5a:	80 e0       	ldi	r24, 0x00	; 0
+ a5c:	0e 94 d4 04 	call	0x9a8	; 0x9a8 <GFXWriteStringXY>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ a60:	9f ef       	ldi	r25, 0xFF	; 255
+ a62:	2d e3       	ldi	r18, 0x3D	; 61
+ a64:	89 e4       	ldi	r24, 0x49	; 73
+ a66:	91 50       	subi	r25, 0x01	; 1
+ a68:	20 40       	sbci	r18, 0x00	; 0
+ a6a:	80 40       	sbci	r24, 0x00	; 0
+ a6c:	e1 f7       	brne	.-8      	; 0xa66 <main+0x5e>
+ a6e:	00 c0       	rjmp	.+0      	; 0xa70 <main+0x68>
+ a70:	00 00       	nop
+ a72:	e1 cf       	rjmp	.-62     	; 0xa36 <main+0x2e>
+
+00000a74 <_exit>:
+ a74:	f8 94       	cli
+
+00000a76 <__stop_program>:
+ a76:	ff cf       	rjmp	.-2      	; 0xa76 <__stop_program>
